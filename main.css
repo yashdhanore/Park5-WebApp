@@ -54,22 +54,28 @@ body {
 .parkcenter {
   position: fixed;
   left: 35%;
+  bottom: 3%;
 }
 
 .nearme {
   justify-self: center;
+  margin-top: 30%;
 }
 .paid {
   justify-self: center;
+  margin-top: 30%;
 }
 .blank {
   justify-self: center;
+  margin-top: 30%;
 }
 .saved {
   justify-self: center;
+  margin-top: 30%;
 }
 .report {
   justify-self: center;
+  margin-top: 30%;
 }
 
 /*desktop styles*/
