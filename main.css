@@ -24,11 +24,15 @@ body {
 /*mobile styles*/
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .topbar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.logo {
   grid-column: 3;
 }
 
@@ -39,6 +43,33 @@ body {
 #map {
   grid-row: 2/8;
   grid-column: 1/6;
+}
+
+.bottomspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.parkcenter {
+  position: fixed;
+  left: 35%;
+}
+
+.nearme {
+  justify-self: center;
+}
+.paid {
+  justify-self: center;
+}
+.blank {
+  justify-self: center;
+}
+.saved {
+  justify-self: center;
+}
+.report {
+  justify-self: center;
 }
 
 /*desktop styles*/
