@@ -1,0 +1,48 @@
+/*variables*/
+:root {
+  --backgroundGrannyApple: #cbddd1;
+  --backgroundBlackish: #272727;
+}
+
+/*Reset browser defaults*/
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*base styles*/
+body {
+  background-color: var(--backgroundGrannyApple);
+  overflow-x: hidden;
+}
+
+/*mobile styles*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.topbar {
+  grid-column: 3;
+}
+
+.bottombar {
+  grid-row: 9;
+}
+
+#map {
+  grid-row: 2/8;
+  grid-column: 1/6;
+}
+
+/*desktop styles*/
+@media screen and (min-width: 960px) {
+  body {
+  }
+}
